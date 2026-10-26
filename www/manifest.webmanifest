@@ -1,0 +1,11 @@
+{
+  "name": "Blaugrana Nova",
+  "short_name": "Blaugrana",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#081326",
+  "theme_color": "#081326",
+  "description": "متابعة برشلونة من مصادر رياضية خارجية"
+}

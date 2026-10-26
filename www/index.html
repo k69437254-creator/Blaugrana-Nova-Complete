@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#081326">
+  <meta name="description" content="متابعة برشلونة: مباريات ونتائج وترتيب ولاعبون وأخبار من مصادر بيانات خارجية.">
+  <title>Blaugrana Nova | عالم برشلونة</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-nav="home" aria-label="الصفحة الرئيسية">
+        <span class="brand-mark"><span></span><span></span><b>B</b></span>
+        <span class="brand-copy"><strong>Blaugrana <em>Nova</em></strong><small>نبض برشلونة لحظة بلحظة</small></span>
+      </button>
+      <div class="top-actions">
+        <span class="connection-pill" id="connection-state"><i></i><span>جارٍ الاتصال</span></span>
+        <button class="icon-button" id="refresh-button" data-action="refresh" aria-label="تحديث البيانات" title="تحديث البيانات">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 18 6.5L20 12M4 12l2 5.5A7 7 0 0 0 18.4 15"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="app-content" class="app-content" tabindex="-1">
+      <section class="loading-panel"><span class="loader"></span><strong>نجهّز عالم برشلونة</strong><p>نطلب آخر البيانات المتاحة من المصادر الرياضية.</p></section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="التنقل الرئيسي">
+      <button class="nav-item active" data-nav="home"><span class="nav-icon" data-icon="home"></span><span>الرئيسية</span></button>
+      <button class="nav-item" data-nav="matches"><span class="nav-icon" data-icon="ball"></span><span>المباريات</span></button>
+      <button class="nav-item" data-nav="standings"><span class="nav-icon" data-icon="table"></span><span>الترتيب</span></button>
+      <button class="nav-item" data-nav="squad"><span class="nav-icon" data-icon="users"></span><span>الفريق</span></button>
+      <button class="nav-item" data-nav="news"><span class="nav-icon" data-icon="news"></span><span>الأخبار</span></button>
+      <button class="nav-item" data-nav="more"><span class="nav-icon" data-icon="more"></span><span>المزيد</span></button>
+    </nav>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="true"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
